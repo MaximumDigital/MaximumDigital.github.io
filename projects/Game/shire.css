@@ -1,0 +1,108 @@
+body{
+    background-image: url(img/back.jpg);
+    background-attachment: fixed;
+    background-position: 0 0;
+    margin: 0;
+    font-family: 'Trebuchet MS';
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+html{
+    width: fit-content;
+}
+.shire{
+    box-sizing: border-box;
+    
+}
+.sh{
+    display: flex;
+    flex-direction: row;
+}
+.title-shire{
+    background-color: #222116;
+    height: 50px;
+    color: #C17621;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0;   
+    position: relative;
+   
+}
+.shire-img{
+    height: 550px;
+    width: 1000px;
+    position: relative;
+    left: 100px;
+    border: 5px;
+    border-style: groove;   
+    box-sizing: border-box; 
+    
+}
+.shire-text{
+    margin-left: 120px;
+    margin-top: 0;
+    margin-right: 20px;
+    padding: 10px 20px ;
+    z-index: 100;
+    background-image: url(img/per.png);
+    text-align: justify;
+    box-sizing: border-box; 
+    background-repeat: round;
+    height: 50%;
+    line-height: 18px; 
+
+}
+.home{
+    height: 50px;
+    color: #C17621;
+    text-align: center;
+}
+.home-link{
+    text-decoration: none;
+}
+ol{
+    list-style: none; 
+    counter-reset: li; 
+}
+li:before {
+    counter-increment: li; 
+    content: counters(li,".") ". "; 
+}
+    @media screen and (max-width:1280px){
+        .sh{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .shire-img{
+            max-width: 800px;
+            max-height: 450px;
+            left: 0;
+        }
+        .shire-text{
+            margin: 0;
+        }
+    }
+    .image span{
+        border-radius: 5px 5px 5px 5px;
+        visibility: hidden;
+        position: absolute;
+        left: 1200px;
+        box-shadow: -2px 2px 10px -1px #333; 
+        border-radius: 5px;
+        width: 100px;
+        height: 100px;
+        z-index: 9999;
+    }
+    .image:hover span{
+    visibility: visible;
+    }
+    a:link{
+        color: black;
+
+    }
+    a:visited{
+        color: black;
+    }
